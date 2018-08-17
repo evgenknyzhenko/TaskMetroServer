@@ -24,4 +24,9 @@ public class UserServiceImpl implements UserService {
     public User getByNumber(long number) {
         return userRepository.getBymobileNo(number);
     }
+
+    public User addUser(User user) {
+        System.out.println(user.getName());
+        return userRepository.save(user);
+    }
 }

@@ -10,4 +10,6 @@ public interface UserService {
     User getByAge(int age);
 
     User getByNumber(long number);
+
+    User addUser(User user);
 }
